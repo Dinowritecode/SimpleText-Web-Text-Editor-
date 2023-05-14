@@ -1,3 +1,3 @@
-import main from './views/main.vue'
+import App  from './views/App.vue'
 import {createApp} from 'vue'
-createApp(main).mount('#app')
+createApp(App).mount('#app')
