@@ -53,6 +53,7 @@ export default{
 #interface > #tools{
     position: absolute;
     left: 12px;
+    flex: 40px;
 }
 #interface > #tools img{
     position: relative;
