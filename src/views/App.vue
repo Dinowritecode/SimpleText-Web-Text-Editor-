@@ -1,6 +1,8 @@
 <template>
+<div id="editorshell">
+<div class="editor">
 <div id="interface">
-<div id="tools">
+<div id="tools">   <!--页面组件-->
     <img src="../assets/引用_quote.svg">
     <img src="../assets/文字加粗_text-bold.svg">
     <img src="../assets/文字斜体_text-italic.svg">
@@ -29,57 +31,20 @@
 </div>
 <div id="bottom-line"></div>
 </div>
+<div id="shell">
+<div id="edit" contenteditable="true">{{richText}}</div>
+</div>
+</div></div>
 </template>
 <script lang="ts">
 export default{
     data(){
         return{
-            num:'23'
+            richText:''
         }
     }
 }
 </script>
 <style scoped>
-#interface{
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: #FAF9FF;
-    z-index: 3;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-#interface > #tools{
-    position: absolute;
-    left: 12px;
-    flex: 40px;
-}
-#interface > #tools img{
-    position: relative;
-    margin: 0 4px 0 4px;
-    width: 21px;
-    height: 21px;
-    border: 1px solid #FAF9FF;
-    background-color: #FAF9FF;
-    padding: 5px;
-    border-radius: 5px;
-}
-#interface > #tools img:hover{
-    border: 1px solid #d4d4d4;
-    background-color: #d4d4d4;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    transition: all 0.3s ease;
-}
-#interface > #bottom-line{
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    background-color: #8DA0A6;
-    z-index: 2;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5),0 6px 20px 0 rgba(0,0,0,0.5);
-}
+@import url("../assets/style/style.css");
 </style>

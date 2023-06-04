@@ -1,0 +1,60 @@
+#editorshell{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.editor{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(204,204,204);
+    padding: 0;
+    z-index: 1;
+}
+#interface{
+    background-color: #FAF9FF;
+}
+#interface > #tools{
+    left: 12px;
+    flex: 40px;
+}
+#interface > #tools img{
+    margin: 4px 4px 0px 4px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #FAF9FF;
+    background-color: #FAF9FF;
+    padding: 4px;
+    border-radius: 5px;
+}
+#interface > #tools img:hover{
+    border: 1px solid #d4d4d4;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+}
+#interface > #bottom-line{
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background-color: #8DA0A6;
+    
+}
+#shell{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    overflow: auto;
+}
+#edit{
+    height: 100%;
+    word-wrap: break-word;
+    padding: 0 10px;
+    outline: none;
+    white-space: pre-wrap;
+}
