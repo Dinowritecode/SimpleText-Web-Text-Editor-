@@ -1,5 +1,5 @@
 <template>
-<div id="editorshell">
+<div id="editorshell"><!--编辑器外壳-->
 <div class="editor">
 <div id="interface">
 <div id="tools">   <!--页面组件-->
@@ -29,10 +29,10 @@
     <img src="../assets/重新_redo.svg">
     <img src="../assets/全局放大_full-screen.svg">
 </div>
-<div id="bottom-line"></div>
+<div id="bottom-line"></div><!--分割线-->
 </div>
 <div id="shell">
-<div id="edit" contenteditable="true">{{richText}}</div>
+<div id="edit" contenteditable="true">{{richText}}</div><!--文本输入框-->
 </div>
 </div></div>
 </template>
@@ -46,5 +46,5 @@ export default{
 }
 </script>
 <style scoped>
-@import url("../assets/style/style.css");
+@import url("../assets/style/style.css");   /*引入CSS*/
 </style>

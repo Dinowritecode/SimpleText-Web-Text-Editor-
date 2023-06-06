@@ -1,7 +1,7 @@
 {
   "name": "rich-texti-editor",
   "private": true,
-  "version": "0.0.0.2EA",
+  "version": "0.0.0.2EA BETA",
   "type": "module",
   "scripts": {
     "dev": "vite",
