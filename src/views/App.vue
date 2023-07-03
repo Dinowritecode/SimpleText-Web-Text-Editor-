@@ -42,7 +42,7 @@ export default{
         return{
             richText:''
         }
-    }
+    } 
 }
 </script>
 <style scoped>
